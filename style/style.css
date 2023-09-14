@@ -13,10 +13,6 @@
 .debug{
     border: 1px solid white;
 }
-/* .container{
-    max-width: 1500px;
-    margin: 0 auto;
-} */
 .text-white{
     color: #fff;
 }
@@ -58,6 +54,21 @@ main{
     height: calc(100vw / 14);
     min-height: 100px;
     padding: 10px;
+}
+.card-content{
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .name{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    background: var(--tertiary-color);
+    
 }
 /* footer  */
 footer{
