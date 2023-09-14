@@ -10,9 +10,9 @@
     --secondary-color:#202020;
     --tertiary-color:#414141;
 }
-.debug{
+/* .debug{
     border: 1px solid white;
-}
+} */
 .text-white{
     color: #fff;
 }
@@ -22,12 +22,10 @@ header{
     width: 100%;
     height: 40px;
     padding: 5px;
-}
-header .container{
     display: flex;
     justify-content: flex-end;
 }
-header .container div{
+header div{
     background-color: var(--tertiary-color);
     margin-left: 15px;
     padding: 5px;
@@ -53,9 +51,10 @@ main{
     min-width: 150px;
     height: calc(100vw / 14);
     min-height: 100px;
-    padding: 10px;
+    padding: 10px 2px;
 }
 .card-content{
+    height: 100%;
     position: relative;
 }
 .card img{
@@ -66,12 +65,48 @@ main{
 .card .name{
     position: absolute;
     left: 0;
-    bottom: 20%;
+    bottom: 0;
     background: var(--tertiary-color);
-    
+    opacity: 0.8;
+    font-size: 0.8em;
+    padding: 4px;
 }
 /* footer  */
 footer{
     height: 60px;
     width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    text-align: center;
+    padding: 5 10px;
+}
+.big-icon{
+    font-size: 1.5em;
+}
+footer ul:first-child .big-icon{
+     padding-left: 20px;
+}
+.fa-angle-up{
+    font-size: 0.5em;
+    padding-left: 10px;
+}
+footer li{
+    display: flex;
+}
+.icon-section{
+    padding: 0 10px;
+}
+.active{
+    color: green;
+    padding-left: 20px;
+}
+#end{
+    height: 100%;
+    padding: 0 20px;
+    background-color: var(--tertiary-color);
+    line-height: 60px;
 }
